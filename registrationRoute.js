@@ -4,7 +4,7 @@ const bcrypt = require('bcrypt');
 const User = require('./user');
 
 // POST /auth/register
-router.post('./register', async (req, res) => {
+router.post('/register', async (req, res) => {
     const { email, password } = req.body;
 
     try {
@@ -18,6 +18,12 @@ router.post('./register', async (req, res) => {
 
         res.status(201).json({ message: 'User registered successfully!'});
     } catch (err) {
-        res.statue(500).json({ error: 'Registration failed', details: err.message });
+        res.status(500).json({ error: 'Registration failed', details: err.message });
     }
 });
+
+router.get('/test', (req, res) => {
+    res.send('Testing route is working!');
+});
+
+module.exports = router;
