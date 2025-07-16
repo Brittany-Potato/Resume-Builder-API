@@ -7,5 +7,19 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Brittany",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^6.0.0",
+    "docx-templates": "^4.14.1",
+    "docxtemplater": "^3.65.2",
+    "dotenv": "^17.2.0",
+    "express": "^5.1.0",
+    "jsonwebtoken": "^9.0.2",
+    "libreoffice-convert": "^1.6.1",
+    "mongoose": "^8.16.3",
+    "passport": "^0.7.0",
+    "passport-local": "^1.0.0",
+    "passport-session": "^1.0.2",
+    "pizzip": "^3.2.0"
+  }
 }
